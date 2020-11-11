@@ -13,7 +13,7 @@ def degree_to_note(root, mode, degree):
     an integer signifying MIDI note numbers
     """
     intervals = [2, 2, 1, 2, 2, 2, 1]
-    intervals = intervals[-mode:] + intervals[mode:]
+    intervals = intervals[mode:] + intervals[:mode]
     scale = [0]
     for interval in intervals:
         scale.append(scale[-1] + interval)
