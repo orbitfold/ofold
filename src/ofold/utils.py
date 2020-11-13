@@ -38,3 +38,7 @@ def degrees_to_notes(root, mode, degrees):
     assert((0 <= root) and (root <= 127))
     assert((0 <= mode) and (mode <= 7))
     return [degree_to_note(root, mode, degree) for degree in degrees]
+
+
+def degrees_to_midi(root, mode, degrees, durations, filename):
+    pass
