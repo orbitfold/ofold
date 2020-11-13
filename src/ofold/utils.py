@@ -18,7 +18,7 @@ def degree_to_note(root, mode, degree):
     for interval in intervals:
         scale.append(scale[-1] + interval)
     root_mod = degree // 7
-    return (root + 12 * root_mod) + scale[degree]
+    return (root + 12 * root_mod) + scale[degree % 7]
 
     
 def degrees_to_notes(root, mode, degrees):

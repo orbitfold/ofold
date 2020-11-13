@@ -7,5 +7,5 @@ def test_degree_to_note():
         assert(degree_to_note(57, 5, degree) == a_minor[degree])
     a_minor_ = [note - 12 for note in a_minor]
     a_minor_.reverse()
-    for degree in range(7):
-        assert(degree_to_note(57, 5, -degree) == a_minor_[degree])
+    for degree in range(1, 8):
+        assert(degree_to_note(57, 5, -degree) == a_minor_[degree - 1])
