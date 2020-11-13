@@ -37,4 +37,4 @@ def degrees_to_notes(root, mode, degrees):
     """
     assert((0 <= root) and (root <= 127))
     assert((0 <= mode) and (mode <= 7))
-    return None
+    return [degree_to_note(root, mode, degree) for degree in degrees]

@@ -1,4 +1,4 @@
-from ofold.utils import degree_to_note
+from ofold.utils import degree_to_note, degrees_to_notes
 
 def test_degree_to_note():
     assert(degree_to_note(60, 0, 0) == 60)
@@ -9,3 +9,8 @@ def test_degree_to_note():
     a_minor_.reverse()
     for degree in range(1, 8):
         assert(degree_to_note(57, 5, -degree) == a_minor_[degree - 1])
+
+def test_degrees_to_notes():
+    degrees = [-8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+    notes = [43, 45, 47, 48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71]
+    assert(degrees_to_notes(57, 5, degrees) == notes)
