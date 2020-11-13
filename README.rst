@@ -3,17 +3,10 @@ ofold
 =====
 
 
-Add a short description here!
+Algorithmic composition tools for Python
 
 
 Description
 ===========
 
-A longer description of your project goes here...
-
-
-Note
-====
-
-This project has been set up using PyScaffold 3.2.3. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+A set of algorithmic composition tools for Python aimed primarily for simplicity and towards people working in DAWs rather than academic composers.
