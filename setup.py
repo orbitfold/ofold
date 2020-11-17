@@ -18,6 +18,7 @@ except VersionConflict:
     print("Error: version of setuptools is too old (<38.3)!")
     sys.exit(1)
 
-
 if __name__ == "__main__":
-    setup(use_pyscaffold=True)
+    with open('requirements.txt') as fd:
+        required = fd.read().splitlines()
+    setup(use_pyscaffold=True, install_requires=required)
