@@ -26,4 +26,8 @@ def parse_variable_name(name):
   """
   state_graph = {
     "start" : ["note"],
+    "note" : ["octave", "accidental", "end"],
+    "accidental" : ["octave"],
+    "octave" : ["note", "end"],
+    "end" : None
   }
