@@ -31,3 +31,8 @@ def parse_variable_name(name):
     "octave" : ["note", "end"],
     "end" : None
   }
+  characters = {
+    "note" : ["c", "d", "e", "f", "g", "a", "b"],
+    "accidental" : ["b", "s"],
+    "octave" : ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  }
